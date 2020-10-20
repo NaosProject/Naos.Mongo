@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <description>Shared types (models and utilities) for Mongo</description>
+    <tags>models modelobject utilities Mongo</tags>
+  </metadata>
+</package>

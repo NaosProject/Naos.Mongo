@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.Mongo.Domain", "Naos.Mongo.Domain\Naos.Mongo.Domain.csproj", "{5482E629-DFA6-43CF-8B38-7BB388B0F3F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.Mongo.Domain.Test", "Naos.Mongo.Domain.Test\Naos.Mongo.Domain.Test.csproj", "{247AF544-AA38-4FE4-9F0D-660DE02FD267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.Mongo.Serialization.Bson", "Naos.Mongo.Serialization.Bson\Naos.Mongo.Serialization.Bson.csproj", "{E5096DBF-7C96-41F7-AF19-831B3ACAB326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.Mongo.Serialization.Json", "Naos.Mongo.Serialization.Json\Naos.Mongo.Serialization.Json.csproj", "{597D6235-46DD-4824-A174-8EBFB776F396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.Mongo.Protocol.Client", "Naos.Mongo.Protocol.Client\Naos.Mongo.Protocol.Client.csproj", "{100C98CB-50D7-4514-A2AD-A2745C0C36ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.Mongo.Protocol.Client.Test", "Naos.Mongo.Protocol.Client.Test\Naos.Mongo.Protocol.Client.Test.csproj", "{7992D441-8ED0-4119-9283-B8EBE4E73D77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F33E8995-A63A-4B46-B5F5-4015A46F3546}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+		RepoConfig.state = RepoConfig.state
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5482E629-DFA6-43CF-8B38-7BB388B0F3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5482E629-DFA6-43CF-8B38-7BB388B0F3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5482E629-DFA6-43CF-8B38-7BB388B0F3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5482E629-DFA6-43CF-8B38-7BB388B0F3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247AF544-AA38-4FE4-9F0D-660DE02FD267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247AF544-AA38-4FE4-9F0D-660DE02FD267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247AF544-AA38-4FE4-9F0D-660DE02FD267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247AF544-AA38-4FE4-9F0D-660DE02FD267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5096DBF-7C96-41F7-AF19-831B3ACAB326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5096DBF-7C96-41F7-AF19-831B3ACAB326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5096DBF-7C96-41F7-AF19-831B3ACAB326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5096DBF-7C96-41F7-AF19-831B3ACAB326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{597D6235-46DD-4824-A174-8EBFB776F396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597D6235-46DD-4824-A174-8EBFB776F396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597D6235-46DD-4824-A174-8EBFB776F396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597D6235-46DD-4824-A174-8EBFB776F396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100C98CB-50D7-4514-A2AD-A2745C0C36ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100C98CB-50D7-4514-A2AD-A2745C0C36ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100C98CB-50D7-4514-A2AD-A2745C0C36ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100C98CB-50D7-4514-A2AD-A2745C0C36ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7992D441-8ED0-4119-9283-B8EBE4E73D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7992D441-8ED0-4119-9283-B8EBE4E73D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7992D441-8ED0-4119-9283-B8EBE4E73D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7992D441-8ED0-4119-9283-B8EBE4E73D77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD99DFB6-55C2-47B5-97BC-72282939B793}
+	EndGlobalSection
+EndGlobal
