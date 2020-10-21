@@ -8,6 +8,7 @@ namespace Naos.Mongo.Domain
 {
     using System;
     using Naos.Database.Domain;
+    using OBeautifulCode.Assertion.Recipes;
 
     /// <summary>
     /// Captures the details of a restore operation.
@@ -24,5 +25,21 @@ namespace Naos.Mongo.Domain
         /// Gets or sets an enum value with instructions on what to do when restoring to a database that already exists.
         /// </summary>
         public ReplaceOption ReplaceOption { get; set; }
+    }
+
+    /// <summary>
+    /// Extension methods for <see cref="RestoreMongoDatabaseDetails"/>.
+    /// </summary>
+    public static class RestoreMongoDatabaseDetailsExtensions
+    {
+        /// <summary>
+        /// Throws an exception if the <see cref="RestoreMongoDatabaseDetails"/> is invalid.
+        /// </summary>
+        /// <param name="restoreDetails">The restore details to validate.</param>
+        public static void ThrowIfInvalid(this RestoreMongoDatabaseDetails restoreDetails)
+        {
+            new { restoreDetails }.AsArg().Must().NotBeNull();
+            new { restoreDetails.RestoreFrom }.AsArg().Must().NotBeNull();
+        }
     }
 }
