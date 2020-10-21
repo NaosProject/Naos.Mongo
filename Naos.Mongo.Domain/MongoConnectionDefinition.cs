@@ -12,7 +12,7 @@ namespace Naos.Mongo.Domain
     /// <summary>
     /// Kinds of databases.
     /// </summary>
-    public class MongoConnectionDefinition : IConnectionDefinition, IModelViaCodeGen
+    public partial class MongoConnectionDefinition : IConnectionDefinition, IModelViaCodeGen
     {
         /// <summary>
         /// Gets or sets the server name, IP, DNS, etc.
