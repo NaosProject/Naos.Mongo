@@ -119,7 +119,7 @@ namespace Naos.Mongo.Protocol.Client
             var directoryArchiveKind = DirectoryArchiveKind.DotNetZipFile;
             var archiveCompressionKind = ArchiveCompressionKind.Fastest;
             var archiver = ArchiverFactory.Instance.BuildArchiver(directoryArchiveKind, archiveCompressionKind);
-            var archivedDirectory = new ArchivedDirectory(directoryArchiveKind, archiveCompressionKind, backupFilePath, false, Encoding.UTF8.WebName);
+            var archivedDirectory = new ArchivedDirectory(directoryArchiveKind, archiveCompressionKind, backupFilePath, false, Encoding.UTF8.WebName, DateTime.UtcNow);
 
             localAnnouncer(() => Invariant($"Inflating backup file '{backupFilePath}' to '{inflatedBackupFilePath}'"));
             await archiver.RestoreDirectoryAsync(archivedDirectory, inflatedBackupFilePath);
