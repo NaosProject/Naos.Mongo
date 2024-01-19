@@ -65,7 +65,13 @@ namespace Naos.Mongo.Protocol.Client
 
             var exePath = Path.Combine(mongoUtilityDirectory, "mongodump.exe");
             localAnnouncer(() => Invariant($"Backing up database '{databaseName}' to '{backupToPath}' using '{exePath}'"));
-            var output = RunProcess(exePath, Invariant($"--host {connectionDefinition.Server} --db {databaseName} --authenticationDatabase {connectionDefinition.AuthenticationDatabaseName ?? databaseName} --username {connectionDefinition.UserName} --password {connectionDefinition.Password} --out {backupToPath}"));
+            var arguments = Invariant($"--host {connectionDefinition.Server} --db {databaseName} --authenticationDatabase {connectionDefinition.AuthenticationDatabaseName ?? databaseName} --username {connectionDefinition.UserName} --password {connectionDefinition.Password} --out {backupToPath}");
+            if (backupDetails.CollectionsToDumpInParallel > 0)
+            {
+                arguments = Invariant($"{arguments} --numParallelCollections {backupDetails.CollectionsToDumpInParallel}");
+            }
+
+            var output = RunProcess(exePath, arguments);
             localAnnouncer(() => output);
 
             localAnnouncer(() => Invariant($"Creating backup file '{backupFilePath}' from '{backupToPath}'"));

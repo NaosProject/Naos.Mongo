@@ -36,6 +36,14 @@ namespace Naos.Mongo.Domain
         /// Gets or sets the name of the credential to use when backing up to a URL.
         /// </summary>
         public string Credential { get; set; }
+
+        /// <summary>
+        /// Gets or sets the number of collections to dump in parallel.
+        /// </summary>
+        /// <remarks>
+        /// If not set or &lt;= 0 then Mongo default is used.
+        /// </remarks>
+        public int CollectionsToDumpInParallel { get; set; }
     }
 
     /// <summary>
